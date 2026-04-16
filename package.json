@@ -1,0 +1,23 @@
+{
+  "name": "api_final",
+  "version": "1.0.0",
+  "description": "API REST com SQLite, JWT e testes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
