@@ -1,0 +1,479 @@
+{
+  "info": {
+    "_postman_id": "d516361d-81ee-4cb6-bb53-9bd1229f00c2",
+    "name": "ApiLivros",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53315693",
+    "_collection_link": "https://go.postman.co/collection/53315693-d516361d-81ee-4cb6-bb53-9bd1229f00c2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Filtros",
+      "item": [
+        {
+          "name": "Titulo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?titulo=harry",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "titulo",
+                  "value": "harry"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Autor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?autor_id=4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "autor_id",
+                  "value": "4"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ano",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?ano=1997",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "ano",
+                  "value": "1997"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ordenação",
+      "item": [
+        {
+          "name": "Ano decrescente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?sort=ano&order=desc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "ano"
+                },
+                {
+                  "key": "order",
+                  "value": "desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ano crescente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?sort=ano&order=asc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "ano"
+                },
+                {
+                  "key": "order",
+                  "value": "asc"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Paginação",
+      "item": [
+        {
+          "name": "Página 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?page=1&limit=5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Página 2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?page=2&limit=5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Página 3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?page=3&limit=5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "3"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Página 4",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/livros?page=4&limit=5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "livros"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "4"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"usuario\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/livros/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "livros",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET com JOIN",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/livros-com-autores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "livros-com-autores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar livro",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Novo Livro\",\r\n  \"autor_id\": 1,\r\n  \"ano\": 2024\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/livros",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "livros"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Livro Atualizado\",\r\n  \"autor_id\": 1,\r\n  \"ano\": 2025\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/livros/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "livros",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/livros/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "livros",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Exemplo completo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/livros?autor_id=5&sort=ano&order=desc&page=1&limit=3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "livros"
+          ],
+          "query": [
+            {
+              "key": "autor_id",
+              "value": "5"
+            },
+            {
+              "key": "sort",
+              "value": "ano"
+            },
+            {
+              "key": "order",
+              "value": "desc"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
